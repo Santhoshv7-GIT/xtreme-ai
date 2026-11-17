@@ -1,0 +1,8 @@
+release
+installer
+dist
+node_modules
+.git
+.vscode
+.idea
+*.log

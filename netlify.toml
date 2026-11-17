@@ -1,0 +1,31 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NETLIFY_DRAWER = "false"
+
+[context.production.environment]
+  NETLIFY_DRAWER = "false"
+
+[context.deploy-preview.environment]
+  NETLIFY_DRAWER = "false"
+
+[context.branch-deploy.environment]
+  NETLIFY_DRAWER = "false"
+
+[[redirects]]
+  from = "/api/search"
+  to = "/.netlify/functions/search"
+  status = 200
+
+[[redirects]]
+  from = "/api/fetch-page"
+  to = "/.netlify/functions/fetch-page"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

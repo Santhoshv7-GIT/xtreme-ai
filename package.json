@@ -1,0 +1,68 @@
+{
+  "name": "xtreme-ai",
+  "private": true,
+  "version": "1.0.0",
+  "description": "XTREME AI - Advanced Multimodal Intelligence Desktop App",
+  "author": "XTREME AI",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "electron:start": "electron electron/main.cjs",
+    "electron:pack": "npm run build && electron-builder --win dir",
+    "electron:build": "npm run build && electron-builder --win nsis portable"
+  },
+  "build": {
+    "appId": "com.xtremeai.desktop",
+    "productName": "XTREME AI",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "electron/icon.ico",
+      "artifactName": "XTREME-AI-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "XTREME AI",
+      "uninstallDisplayName": "XTREME AI"
+    }
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.58.0",
+    "marked": "^18.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^44.9.0",
+    "electron-builder": "^26.15.3",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}

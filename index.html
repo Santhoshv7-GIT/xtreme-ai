@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo-mascot.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo-mascot.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060913" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>XTREME AI — Advanced Intelligence</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- KaTeX for Math -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <!-- Google Identity Services (Sign In with Google SDK) -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Netlify Badge & Drawer Suppressor -->
+    <style>
+      #netlify-drawer, [data-netlify-drawer], iframe#netlify-drawer, .netlify-badge, a[href*="netlify.com"][class*="badge"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      (function() {
+        function removeNetlifyWidgets() {
+          const els = document.querySelectorAll('#netlify-drawer, [data-netlify-drawer], iframe#netlify-drawer, .netlify-badge, a[href*="netlify.com"][class*="badge"], [class*="netlify-drawer"]');
+          els.forEach(el => el.remove());
+        }
+        removeNetlifyWidgets();
+        window.addEventListener('DOMContentLoaded', removeNetlifyWidgets);
+        window.addEventListener('load', removeNetlifyWidgets);
+        if (typeof MutationObserver !== 'undefined') {
+          const obs = new MutationObserver(removeNetlifyWidgets);
+          obs.observe(document.documentElement, { childList: true, subtree: true });
+        }
+      })();
+    </script>
+  </head>
+  <body class="dark">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
