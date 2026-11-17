@@ -1,81 +1,106 @@
-# XTREME AI — Google Gemini Model Web Replica
+# XTREME AI — Advanced Intelligence Platform 🚀
 
-A web replica of Google Gemini (Gemini 2.0 Flash, 1.5 Pro, and Ultra Deep Think) built with React, Vite, KaTeX, and modern CSS.
+🌐 **Live Demo:** [xtreme-ai-azure.vercel.app](https://xtreme-ai-azure.vercel.app) &nbsp;|&nbsp; 🌐 **Mirror:** [xtreme-ai-model.netlify.app](https://xtreme-ai-model.netlify.app)
+
+XTREME AI is an advanced, high-performance multimodal conversational AI platform built with React, Vite, KaTeX, and modern full-stack web architecture. Engineered for rapid problem-solving, real-time web grounding, interactive code execution, and intuitive voice intelligence.
+
+---
 
 ## 🌟 Key Features
 
-1. **Custom XTREME Geometric Logo & Modern UI**:
-   - Distinctive futuristic **"X"** geometric emblem with dual cybernetic diagonal neon blades (Electric Cyan & Neon Amber/Crimson) and central glowing energy core.
-   - Replaced Google Gemini star logo across the title, sidebar, avatars, and favicon with the custom XTREME emblem.
-   - Authentic Dark (`#131314`) and Light mode toggle.
-   - Collapsible sidebar with chat session history, rename, delete, and persistent `localStorage` storage.
+### 1. Futuristic Cybernetic Interface & Custom Branding
+- Distinctive futuristic **"X"** geometric emblem with dual cybernetic diagonal neon blades (Electric Cyan & Neon Crimson) and central glowing energy core.
+- Sleek modern Dark (`#131314`) and Light theme toggle.
+- Collapsible sidebar with chat session history, persistent storage, search, and session management.
 
-2. **XTREME Model Lineup**:
-   - **XTREME Normal 1.0**: Balanced daily intelligence, clean structured responses, and multimodal comprehension.
-   - **XTREME Fire 3.0**: Blazing speed, rapid code synthesis, and live web-grounded creative intelligence.
-   - **XTREME Lightning 5.0**: Ultra-fast deep cognitive horsepower with step-by-step reasoning traces and complex problem solving.
+### 2. Multi-Tier Model Intelligence Lineup
+- **XTREME Normal 1.0**: Balanced daily cognitive intelligence, clean structured answers, and multimodal comprehension with rapid response reflexes.
+- **XTREME Fire 3.0**: High-octane speed, blazing-fast code synthesis, and dynamic creative reasoning.
+- **XTREME Lightning 5.0**: Deep cognitive horsepower equipped with multi-step reasoning traces and complex problem-solving.
 
-3. **Multimodal Intelligence & Attachments**:
-   - Upload any image or file via the `+` attachment button.
-   - Built-in **Sample Multimodal Images picker** (Nebula, Cyberpunk Drone, Financial Dashboard, Architecture) to test multimodal reasoning in 1 click.
-   - Image analysis with object recognition, contextual breakdown, and OCR.
+### 3. Deep Cognitive Reasoning (Deep Think)
+- Step-by-step reasoning breakdown showing chain-of-thought traces, logic synthesis, and problem decomposition before delivering answers.
+- Collapsible thinking accordion showing real-time computation duration and cognitive milestones.
 
-3. **Thinking Process (Deep Think / Chain-of-Thought)**:
-   - Interactive collapsible accordion ("Thought for 3.2s") showing step-by-step reasoning traces and problem breakdown, just like Gemini 2.0 Flash Thinking.
+### 4. Interactive Live Canvas & Code Sandbox
+- Direct embedded live code execution for generated HTML, CSS, JavaScript, and Canvas applications.
+- One-click **"Run in Live Canvas"** opens a sandbox iframe allowing immediate real-time testing and visualization.
 
-4. **Interactive Live Canvas & Code Sandbox**:
-   - Every generated HTML/CSS/JavaScript or Canvas code block has a **"Run in Live Canvas"** button.
-   - Opens an embedded sandbox runner iframe where users can run and interact with the code live!
+### 5. Multimodal Perception & Visual Intelligence
+- Upload images and documents directly for visual question answering, OCR, object recognition, and chart analysis.
+- Built-in multimodal sample presets to explore visual reasoning capabilities in one click.
 
-5. **Voice Capabilities**:
-   - **Speech-to-Text Dictation**: Click the microphone icon to speak your prompts (uses Web Speech API).
-   - **XTREME Live Voice Mode**: Fullscreen Gemini Live voice chat with pulsing glowing particle orb and speech interaction.
-   - **Text-to-Speech (TTS) Reader**: Listen to any model answer read aloud with play/pause and custom speech speed controls.
+### 6. Voice Intelligence & Audio Systems
+- **Speech-to-Text Dictation**: Voice-powered prompt dictation utilizing browser Web Speech APIs.
+- **XTREME Live Voice Mode**: Fullscreen interactive voice experience with an animated glowing audio visualizer.
+- **Text-to-Speech (TTS) Engine**: Natural spoken responses with adjustable speed controls and live playback.
 
-6. **Gemini "Drafts" Feature**:
-   - Offers multiple response drafts (Draft 1, Draft 2, Draft 3) for each generated response so you can explore alternate formulations.
+### 7. Real-Time Web Access & Live Source Grounding
+- Built-in real-time web crawler and Wikipedia search grounding engine (`/api/search`).
+- Deep webpage reader (`/api/fetch-page`) that reads live websites and URLs directly.
+- Cross-verified facts from live sources with interactive cited source chips.
 
-7. **Dual Engine (Real Gemini API + Smart Offline Engine)**:
-   - **Offline Mode**: Works 100% out of the box with zero keys needed, providing structured answers across coding, quantum physics, creative concept art, and viral marketing.
-   - **Live Gemini API Mode**: Enter your free Google AI Studio API key in **Settings** (`AIzaSy...`) to talk to live `gemini-2.0-flash-exp` or `gemini-1.5-pro` with real-time Google search grounding.
+### 8. Multi-Draft Exploration
+- Offers multiple alternative response drafts (Draft 1, Draft 2, Draft 3) for each generated response so users can compare formulations and pick the best answer.
 
-8. **Live Real-Time Web Access & Clear Deep Thinking**:
-   - Built-in real-time web crawler and Wikipedia search engine (`/api/search`).
-   - Deep webpage reader (`/api/fetch-page`) that reads live websites and URLs directly.
-   - Grounded reasoning engine that cross-verifies facts from live sources before generating structured answers with cited clickable source chips.
-   - Real-time search progress indicator: `🌐 Searching the live web...` -> `📚 Reading sources...` -> `🧠 Deep thinking and synthesizing...`
+### 9. Dual Intelligent Engine Architecture
+- **Offline High-Performance Core**: Delivers structured intelligence across programming, math, logic, and creative concepts with zero external latency.
+- **Cloud Intelligence Core**: Connected to frontier generative API infrastructure for deep factual reasoning and multimodal analysis.
 
 ---
 
-## 🚀 Live Hosted Production Sites
+## 🛠️ Tech Stack
 
-- ⚡ **Official Vercel Production URL**: **[https://xtreme-ai-azure.vercel.app](https://xtreme-ai-azure.vercel.app)**
-- 🌐 **Netlify Production URL**: **[https://xtreme-ai-model.netlify.app](https://xtreme-ai-model.netlify.app)**
-- 📊 **Vercel Project Dashboard**: [https://vercel.com/carrer-ai/xtreme-ai](https://vercel.com/carrer-ai/xtreme-ai)
+- **Frontend:** React, Vite, KaTeX (LaTeX math rendering), Lucide Icons, CSS Variables
+- **API & Serverless:** Vercel Serverless Functions, Netlify Functions
+- **Desktop Application:** Electron & C# Windows Installer
+- **Database & Auth:** Supabase Integration
+- **Hosting:** Vercel & Netlify
 
 ---
 
-## 💻 Local Access & Domain Mapping
-The application is bound to standard HTTP **Port 80**, meaning you don't even need to type `:5173`.
+## 🚀 Getting Started
 
-To open it using the exact domain name in your browser:
-1. Right-click [`map-xtreme-domain.bat`](file:///C:/Users/santh/.gemini/antigravity/scratch/xtreme-ai/map-xtreme-domain.bat) in the project folder and click **Run as Administrator** (or run PowerShell as Administrator and enter `Add-Content -Path "$env:SystemRoot\System32\drivers\etc\hosts" -Value "`n127.0.0.1 www.xtremeai.com www.xtreme-ai.com"`).
-2. Open your browser and go to:
-   - **`http://www.xtremeai.com`**
-   - **`http://www.xtreme-ai.com`**
-   - **`http://localhost`**
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-### 2. Live Public Internet Tunnel
-- Public live URL: **`https://xtreme-ai.loca.lt`**
+### Installation
 
-### 3. Deploying to Netlify
-You can deploy to **Netlify** with full serverless live search support:
-```bash
-cd C:\Users\santh\.gemini\antigravity\scratch\xtreme-ai
-.\deploy.bat
-```
-- **Custom Domain (`www.xtremeai.com`)**:
-  In your Netlify Dashboard, go to **Domain management → Add custom domain**, enter **`www.xtremeai.com`**, and point your registrar's DNS (CNAME: `xtreme-ai-model.netlify.app`).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Santhoshv7-GIT/xtreme-ai.git
+   cd xtreme-ai
+   ```
 
-### 4. 1-Click Interactive Deployer
-Double-click [`deploy.bat`](file:///C:/Users/santh/.gemini/antigravity/scratch/xtreme-ai/deploy.bat) in the project directory to build, bundle, and deploy straight to Netlify production in one click!
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Configure environment variables (optional for live cloud models):
+   ```env
+   VITE_GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+4. Run local development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🌐 Live Production Deployments
+
+- ⚡ **Official Vercel Production**: [https://xtreme-ai-azure.vercel.app](https://xtreme-ai-azure.vercel.app)
+- 🌐 **Netlify Production Mirror**: [https://xtreme-ai-model.netlify.app](https://xtreme-ai-model.netlify.app)
+
+---
+
+## 👨‍💻 Author
+
+**Santhosh V**
+- GitHub: [@Santhoshv7-GIT](https://github.com/Santhoshv7-GIT)
+- Email: [santhoshv2179@gmail.com](mailto:santhoshv2179@gmail.com)
+
+**Code. Create. Innovate. Inspire.** 🚀
